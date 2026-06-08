@@ -1,0 +1,25 @@
+relationship 9d19e87b-4971-48ca-9921-a752f9973d05
+	joinOnDateBehavior: datePartOnly
+	fromColumn: account.createdon
+	toColumn: LocalDateTable_c9a2b31f-af8c-4ace-817a-6d9e3285cb36.Date
+
+relationship 5534e6d1-2170-4c9a-afce-173f37bd34f2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: account.modifiedon
+	toColumn: LocalDateTable_3537e40f-3988-4d41-9e9a-d6283b1f3a66.Date
+
+relationship 17d8e6a1-0be3-4693-be60-4c0207f08a85
+	joinOnDateBehavior: datePartOnly
+	fromColumn: account.lastusedincampaign
+	toColumn: LocalDateTable_d06b44b9-b143-4a3e-84f5-a8e3086f0ca6.Date
+
+relationship dbfdc184-e262-4a98-baaf-5e1087292127
+	joinOnDateBehavior: datePartOnly
+	fromColumn: account.overriddencreatedon
+	toColumn: LocalDateTable_95f613a2-ee92-47e4-9736-aeeea026fcd0.Date
+
+relationship 4b459a59-02c4-4ce6-ab3e-35289ba90b33
+	joinOnDateBehavior: datePartOnly
+	fromColumn: account.lastonholdtime
+	toColumn: LocalDateTable_49adf758-b61a-418d-a9ae-7e28467ac4d0.Date
+
