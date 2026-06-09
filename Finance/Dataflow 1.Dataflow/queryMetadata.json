@@ -1,0 +1,56 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "Dataflow 1",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "Query": {
+      "queryId": "07c798d4-80e1-4c9e-8532-19f3857aaf04",
+      "queryName": "Query"
+    },
+    "Query (2)": {
+      "queryId": "42fc5c82-93e3-42eb-93d6-e8d482d2cd3a",
+      "queryName": "Query (2)"
+    },
+    "WorkspaceId": {
+      "queryId": "dbf89d37-9b51-47b4-a82b-6c35490087ae",
+      "queryName": "WorkspaceId",
+      "loadEnabled": false
+    },
+    "WarehouseId": {
+      "queryId": "804acb63-0301-463b-b7b2-13dcdd44dc1b",
+      "queryName": "WarehouseId",
+      "loadEnabled": false
+    },
+    "WarehouseTable": {
+      "queryId": "1e67b315-d357-435c-badb-1e96099fdf3f",
+      "queryName": "WarehouseTable",
+      "loadEnabled": false
+    },
+    "Query_DataDestination": {
+      "queryId": "c4055113-e9da-49c0-8674-3e9499d9e4f5",
+      "queryName": "Query_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Query (2)_DataDestination": {
+      "queryId": "b16cebce-0b94-4d81-963a-e2d0c5a0d732",
+      "queryName": "Query (2)_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "https://mngenvmcap945981.sharepoint.com/sites/SharePoint1/",
+      "kind": "Web",
+      "connectionId": "{\"ClusterId\":\"5b447dd6-b6b9-4aa4-b8a5-1804b35468f6\",\"DatasourceId\":\"1ed0d2c8-2a68-4b49-b768-0bef100aa1c6\"}"
+    },
+    {
+      "path": "Warehouse",
+      "kind": "Warehouse",
+      "connectionId": "{\"ClusterId\":\"5b447dd6-b6b9-4aa4-b8a5-1804b35468f6\",\"DatasourceId\":\"cefff3bb-347b-48fa-abef-3e2098d734e7\"}"
+    }
+  ]
+}
