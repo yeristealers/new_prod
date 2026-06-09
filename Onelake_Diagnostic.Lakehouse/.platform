@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "Onelake_Diagnostic"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a648a1aa-b1f0-a0c0-4a23-06f3f2a71640"
+  }
+}

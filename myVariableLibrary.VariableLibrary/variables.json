@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/variableLibrary/definition/variables/1.0.0/schema.json",
+  "variables": [
+    {
+      "name": "WarehouseId",
+      "note": "",
+      "type": "String",
+      "value": "b1d8bb7d-65d3-43fb-b09e-5ce5b6df7fad"
+    },
+    {
+      "name": "SqlEndpoint",
+      "note": "",
+      "type": "String",
+      "value": "wkb6uvqlrikehne7zdc22d4v2a-4up5ue3u7t4u5d7bqsy45lsjgu.datawarehouse.fabric.microsoft.com"
+    },
+    {
+      "name": "WarehouseTable",
+      "note": "",
+      "type": "String",
+      "value": "devTable"
+    },
+    {
+      "name": "WorkspaceId",
+      "note": "",
+      "type": "String",
+      "value": "13da1fe5-fc74-4ef9-8fe1-84b1ceae4935"
+    },
+    {
+      "name": "DataflowId",
+      "note": "",
+      "type": "String",
+      "value": "c6983c12-9b72-4cc7-85c3-58e9beb57451"
+    }
+  ]
+}

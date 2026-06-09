@@ -1,0 +1,67 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "my new dataflow gen2",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "Query1": {
+      "queryId": "6f7cd9dc-d3a9-4fe4-a910-f8150c2a1f5b",
+      "queryName": "Query1"
+    },
+    "Query2": {
+      "queryId": "71be0de5-febf-4d97-bca6-4d68299b3b48",
+      "queryName": "Query2"
+    },
+    "WorkspaceId": {
+      "queryId": "3c959a34-8d6d-4f8e-9388-947e8ff1c4cc",
+      "queryName": "WorkspaceId",
+      "loadEnabled": false
+    },
+    "WarehouseId": {
+      "queryId": "30c3ba2c-6095-4a7e-bda9-fc76b2b35890",
+      "queryName": "WarehouseId",
+      "loadEnabled": false
+    },
+    "WarehouseTable": {
+      "queryId": "73a391af-87df-4f5f-841e-709f61ffcd1d",
+      "queryName": "WarehouseTable",
+      "loadEnabled": false
+    },
+    "Query1_DataDestination": {
+      "queryId": "8c601831-60a6-4804-9944-902dfaaee4e6",
+      "queryName": "Query1_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Query2_DataDestination": {
+      "queryId": "913cdabf-80c2-4a23-80b4-316efbaa4667",
+      "queryName": "Query2_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "https://mngenvmcap945981.sharepoint.com/sites/SharePoint1/",
+      "kind": "Web",
+      "connectionId": "{\"ClusterId\":\"5b447dd6-b6b9-4aa4-b8a5-1804b35468f6\",\"DatasourceId\":\"1ed0d2c8-2a68-4b49-b768-0bef100aa1c6\"}"
+    },
+    {
+      "path": "https://mngenvmcap945981.sharepoint.com/",
+      "kind": "SharePoint",
+      "connectionId": "{\"ClusterId\":\"5b447dd6-b6b9-4aa4-b8a5-1804b35468f6\",\"DatasourceId\":\"b0233c62-1726-4f05-b5c9-a6f8a4a9b1b8\"}"
+    },
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"5b447dd6-b6b9-4aa4-b8a5-1804b35468f6\",\"DatasourceId\":\"46a2651e-55c3-469d-acc8-b58dc3074847\"}"
+    },
+    {
+      "path": "Warehouse",
+      "kind": "Warehouse",
+      "connectionId": "{\"ClusterId\":\"5b447dd6-b6b9-4aa4-b8a5-1804b35468f6\",\"DatasourceId\":\"46386669-37b7-4e4e-afe0-1971b8cd93b0\"}"
+    }
+  ],
+  "parametric": true
+}

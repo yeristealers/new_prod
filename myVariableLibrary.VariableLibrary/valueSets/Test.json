@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/variableLibrary/definition/valueSet/1.0.0/schema.json",
+  "name": "Test",
+  "variableOverrides": [
+    {
+      "name": "WarehouseTable",
+      "value": "testTable"
+    },
+    {
+      "name": "SqlEndpoint",
+      "value": "wkb6uvqlrikehne7zdc22d4v2a-h2cjn6lmjovu5fdjzndldklayu.datawarehouse.fabric.microsoft.com"
+    },
+    {
+      "name": "WarehouseId",
+      "value": "b02003bf-8f48-4931-9f55-232fb00b46e2"
+    },
+    {
+      "name": "WorkspaceId",
+      "value": "f996843e-4b6c-4eab-9469-cb46b1a960c5"
+    },
+    {
+      "name": "DataflowId",
+      "value": "d648d0e1-8616-41ab-baad-342942b16195"
+    }
+  ]
+}

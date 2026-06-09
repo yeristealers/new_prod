@@ -1,0 +1,214 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "name": "Copy_8wy",
+        "type": "Copy",
+        "dependsOn": [
+          {
+            "activity": "Dataflow1",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "source": {
+            "type": "DataWarehouseSource",
+            "queryTimeout": "02:00:00",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "annotations": [],
+              "linkedService": {
+                "name": "my new warehouse",
+                "properties": {
+                  "annotations": [],
+                  "type": "DataWarehouse",
+                  "typeProperties": {
+                    "endpoint": "wkb6uvqlrikehne7zdc22d4v2a-4up5ue3u7t4u5d7bqsy45lsjgu.datawarehouse.fabric.microsoft.com",
+                    "artifactId": "b1d8bb7d-65d3-43fb-b09e-5ce5b6df7fad",
+                    "workspaceId": "13da1fe5-fc74-4ef9-8fe1-84b1ceae4935"
+                  }
+                }
+              },
+              "type": "DataWarehouseTable",
+              "schema": [],
+              "typeProperties": {
+                "schema": "dbo",
+                "table": "devTable"
+              }
+            }
+          },
+          "sink": {
+            "type": "DataWarehouseSink",
+            "allowCopyCommand": true,
+            "copyCommandSettings": {},
+            "tableOption": "autoCreate",
+            "datasetSettings": {
+              "annotations": [],
+              "linkedService": {
+                "name": "619cb9d9_7ea3_4c93_94ef_6db0b4f666f7",
+                "properties": {
+                  "annotations": [],
+                  "type": "DataWarehouse",
+                  "typeProperties": {
+                    "endpoint": "@pipeline().libraryVariables.myVariableLibrary_SqlEndpoint",
+                    "artifactId": "@pipeline().libraryVariables.myVariableLibrary_WarehouseId",
+                    "workspaceId": "@pipeline().libraryVariables.myVariableLibrary_WorkspaceId"
+                  }
+                }
+              },
+              "type": "DataWarehouseTable",
+              "schema": [],
+              "typeProperties": {
+                "table": {
+                  "value": "@pipeline().libraryVariables.myVariableLibrary_WarehouseTable",
+                  "type": "Expression"
+                }
+              }
+            }
+          },
+          "enableStaging": true,
+          "translator": {
+            "type": "TabularTranslator",
+            "mappings": [
+              {
+                "source": {
+                  "name": "countryOrRegion",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "countryOrRegion",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "holidayName",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "holidayName",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "normalizeHolidayName",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "normalizeHolidayName",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "isPaidTimeOff",
+                  "type": "Boolean",
+                  "physicalType": "BOOLEAN"
+                },
+                "sink": {
+                  "name": "isPaidTimeOff",
+                  "physicalType": "bit"
+                }
+              },
+              {
+                "source": {
+                  "name": "countryRegionCode",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "countryRegionCode",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "date",
+                  "type": "DateTime",
+                  "physicalType": "INT96"
+                },
+                "sink": {
+                  "name": "date",
+                  "physicalType": "datetime2",
+                  "precision": 6
+                }
+              }
+            ],
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          }
+        }
+      },
+      {
+        "name": "Dataflow1",
+        "type": "RefreshDataflow",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "dataflowId": {
+            "value": "@pipeline().libraryVariables.myVariableLibrary_DataflowId",
+            "type": "Expression"
+          },
+          "workspaceId": {
+            "value": "@pipeline().libraryVariables.myVariableLibrary_WarehouseId",
+            "type": "Expression"
+          },
+          "notifyOption": "NoNotification"
+        }
+      }
+    ],
+    "libraryVariables": {
+      "myVariableLibrary_WorkspaceId": {
+        "type": "String",
+        "variableName": "WorkspaceId",
+        "libraryName": "myVariableLibrary"
+      },
+      "myVariableLibrary_WarehouseId": {
+        "type": "String",
+        "variableName": "WarehouseId",
+        "libraryName": "myVariableLibrary"
+      },
+      "myVariableLibrary_WarehouseTable": {
+        "type": "String",
+        "variableName": "WarehouseTable",
+        "libraryName": "myVariableLibrary"
+      },
+      "myVariableLibrary_SqlEndpoint": {
+        "type": "String",
+        "variableName": "SqlEndpoint",
+        "libraryName": "myVariableLibrary"
+      },
+      "myVariableLibrary_DataflowId": {
+        "type": "String",
+        "variableName": "DataflowId",
+        "libraryName": "myVariableLibrary"
+      }
+    }
+  }
+}

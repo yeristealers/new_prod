@@ -1,0 +1,74 @@
+[
+  {
+    "name": "workflow",
+    "path": "/Tables",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/workflow",
+        "itemId": "6eaec454-0099-4c37-82f1-98488014b56c",
+        "workspaceId": "5dadfbe5-aebc-41f6-900b-af42b171caac"
+      }
+    }
+  },
+  {
+    "name": "TargetMetadata",
+    "path": "/Tables",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/TargetMetadata",
+        "itemId": "6eaec454-0099-4c37-82f1-98488014b56c",
+        "workspaceId": "5dadfbe5-aebc-41f6-900b-af42b171caac"
+      }
+    }
+  },
+  {
+    "name": "publicholidays",
+    "path": "/Tables",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/publicholidays",
+        "itemId": "bd745fc4-83c8-44eb-a8b3-12a211c63211",
+        "workspaceId": "13da1fe5-fc74-4ef9-8fe1-84b1ceae4935"
+      }
+    }
+  },
+  {
+    "name": "appaction",
+    "path": "/Tables",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/appaction",
+        "itemId": "6eaec454-0099-4c37-82f1-98488014b56c",
+        "workspaceId": "5dadfbe5-aebc-41f6-900b-af42b171caac"
+      }
+    }
+  },
+  {
+    "name": "account",
+    "path": "/Tables",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/account",
+        "itemId": "6eaec454-0099-4c37-82f1-98488014b56c",
+        "workspaceId": "5dadfbe5-aebc-41f6-900b-af42b171caac"
+      }
+    }
+  },
+  {
+    "name": "OptionsetMetadata_partitioned",
+    "path": "/Files",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Files/OptionsetMetadata_partitioned",
+        "itemId": "6eaec454-0099-4c37-82f1-98488014b56c",
+        "workspaceId": "5dadfbe5-aebc-41f6-900b-af42b171caac"
+      }
+    }
+  }
+]
