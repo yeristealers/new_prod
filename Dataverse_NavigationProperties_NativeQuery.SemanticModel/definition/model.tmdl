@@ -1,0 +1,33 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-GB
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+/// Query group for diagnostics
+queryGroup Diagnostics
+
+	annotation PBI_QueryGroupOrder = 0
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["account","account (2)","account (2)_dbo_account_Counters_2025-12-16_21:54","account (2)_dbo_account_Detailed_2025-12-16_21:54","account (2)_dbo_account_Aggregated_2025-12-16_21:54","account (2)_dbo_account_Partitions_2025-12-16_21:54"]
+
+ref table account
+ref table DateTableTemplate_e4af2b48-2e44-4c87-bdf8-2eca4dca3002
+ref table LocalDateTable_b0f3abad-089d-4002-88d6-a116385678b9
+ref table LocalDateTable_1268f14b-a77e-4fa1-8817-5162675954b7
+ref table LocalDateTable_eff4a54b-4242-47da-af4a-53e23b74679c
+ref table LocalDateTable_5be89d8b-95a2-42e0-b15d-b646ba145bff
+ref table LocalDateTable_ce631815-e4e9-403a-b4e8-fbb8d7c334ee
+ref table 'account (2)'
+ref table LocalDateTable_fa25a4c7-c7d2-4b58-8187-17326e8a1322
+ref table LocalDateTable_377ccb9b-8c60-4880-b171-2f122ce6ce3f
+ref table LocalDateTable_6abbfc9d-9dc3-4f6e-8cfa-ac04c79f0c9d
+ref table LocalDateTable_aef14207-016f-49b6-aa12-d68ace0ec543
+ref table LocalDateTable_9d9a18af-59dd-45b8-a18a-db3240825149
+
+ref cultureInfo en-US
+

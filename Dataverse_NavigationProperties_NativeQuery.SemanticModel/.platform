@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Dataverse_NavigationProperties_NativeQuery"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9b73a4ec-e38c-827c-4f0f-13faff978a70"
+  }
+}

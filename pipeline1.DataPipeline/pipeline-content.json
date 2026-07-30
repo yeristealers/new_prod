@@ -1,0 +1,345 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "ParquetSource",
+            "storeSettings": {
+              "type": "AzureBlobStorageReadSettings",
+              "recursive": false,
+              "wildcardFolderPath": "green/puYear=*/puMonth=*",
+              "wildcardFileName": "*.parquet",
+              "enablePartitionDiscovery": false
+            },
+            "formatSettings": {
+              "type": "ParquetReadSettings"
+            },
+            "datasetSettings": {
+              "type": "Parquet",
+              "typeProperties": {
+                "location": {
+                  "type": "AzureBlobStorageLocation",
+                  "container": "nyctlc"
+                },
+                "compressionCodec": "snappy"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "nyc_taxi_green",
+                "properties": {
+                  "type": "AzureBlobStorage",
+                  "typeProperties": {
+                    "authenticationType": "Anonymous",
+                    "containerUri": "https://azureopendatastorage.blob.core.windows.net/nyctlc"
+                  }
+                }
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "LakehouseTableSink",
+            "tableActionOption": "Append",
+            "applyVOrder": true,
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "schema": "dbo",
+                "table": "pipeline1_table"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "lakehose_di",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "75b22302-0199-9e49-4ab5-2de7daf0ea01",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "mappings": [
+              {
+                "source": {
+                  "name": "vendorID",
+                  "type": "Int32",
+                  "physicalType": "INT32"
+                },
+                "sink": {
+                  "name": "vendorID",
+                  "physicalType": "INT_32"
+                }
+              },
+              {
+                "source": {
+                  "name": "lpepPickupDatetime",
+                  "type": "DateTime",
+                  "physicalType": "INT96"
+                },
+                "sink": {
+                  "name": "lpepPickupDatetime",
+                  "physicalType": "INT96"
+                }
+              },
+              {
+                "source": {
+                  "name": "lpepDropoffDatetime",
+                  "type": "DateTime",
+                  "physicalType": "INT96"
+                },
+                "sink": {
+                  "name": "lpepDropoffDatetime",
+                  "physicalType": "INT96"
+                }
+              },
+              {
+                "source": {
+                  "name": "passengerCount",
+                  "type": "Int32",
+                  "physicalType": "INT32"
+                },
+                "sink": {
+                  "name": "passengerCount",
+                  "physicalType": "INT_32"
+                }
+              },
+              {
+                "source": {
+                  "name": "tripDistance",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "tripDistance",
+                  "physicalType": "DOUBLE"
+                }
+              },
+              {
+                "source": {
+                  "name": "puLocationId",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "puLocationId",
+                  "physicalType": "STRING"
+                }
+              },
+              {
+                "source": {
+                  "name": "doLocationId",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "doLocationId",
+                  "physicalType": "STRING"
+                }
+              },
+              {
+                "source": {
+                  "name": "pickupLongitude",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "pickupLongitude",
+                  "physicalType": "DOUBLE"
+                }
+              },
+              {
+                "source": {
+                  "name": "pickupLatitude",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "pickupLatitude",
+                  "physicalType": "DOUBLE"
+                }
+              },
+              {
+                "source": {
+                  "name": "dropoffLongitude",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "dropoffLongitude",
+                  "physicalType": "DOUBLE"
+                }
+              },
+              {
+                "source": {
+                  "name": "dropoffLatitude",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "dropoffLatitude",
+                  "physicalType": "DOUBLE"
+                }
+              },
+              {
+                "source": {
+                  "name": "rateCodeID",
+                  "type": "Int32",
+                  "physicalType": "INT32"
+                },
+                "sink": {
+                  "name": "rateCodeID",
+                  "physicalType": "INT_32"
+                }
+              },
+              {
+                "source": {
+                  "name": "storeAndFwdFlag",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "storeAndFwdFlag",
+                  "physicalType": "STRING"
+                }
+              },
+              {
+                "source": {
+                  "name": "paymentType",
+                  "type": "Int32",
+                  "physicalType": "INT32"
+                },
+                "sink": {
+                  "name": "paymentType",
+                  "physicalType": "INT_32"
+                }
+              },
+              {
+                "source": {
+                  "name": "fareAmount",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "fareAmount",
+                  "physicalType": "DOUBLE"
+                }
+              },
+              {
+                "source": {
+                  "name": "extra",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "extra",
+                  "physicalType": "DOUBLE"
+                }
+              },
+              {
+                "source": {
+                  "name": "mtaTax",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "mtaTax",
+                  "physicalType": "DOUBLE"
+                }
+              },
+              {
+                "source": {
+                  "name": "improvementSurcharge",
+                  "type": "String",
+                  "physicalType": "STRING"
+                },
+                "sink": {
+                  "name": "improvementSurcharge",
+                  "physicalType": "STRING"
+                }
+              },
+              {
+                "source": {
+                  "name": "tipAmount",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "tipAmount",
+                  "physicalType": "DOUBLE"
+                }
+              },
+              {
+                "source": {
+                  "name": "tollsAmount",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "tollsAmount",
+                  "physicalType": "DOUBLE"
+                }
+              },
+              {
+                "source": {
+                  "name": "ehailFee",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "ehailFee",
+                  "physicalType": "DOUBLE"
+                }
+              },
+              {
+                "source": {
+                  "name": "totalAmount",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "totalAmount",
+                  "physicalType": "DOUBLE"
+                }
+              },
+              {
+                "source": {
+                  "name": "tripType",
+                  "type": "Int32",
+                  "physicalType": "INT32"
+                },
+                "sink": {
+                  "name": "tripType",
+                  "physicalType": "INT_32"
+                }
+              }
+            ],
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Copy data1",
+        "dependsOn": []
+      }
+    ]
+  }
+}

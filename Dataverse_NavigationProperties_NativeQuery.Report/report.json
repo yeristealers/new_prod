@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.68\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY25SU11\",\"type\":2,\"version\":{\"visual\":\"2.4.0\",\"report\":\"3.0.0\",\"page\":\"2.3.0\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY25SU11",
+            "path": "BaseThemes/CY25SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "b949cd0534b29a0aa1e0",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"547972b2e729d63e31d5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":44.308025150429316,\"y\":99.69305658846595,\"z\":0,\"width\":1190.7781759177878,\"height\":520.6192955175444,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"account.accountid\"},{\"queryRef\":\"account.accountnumber\"},{\"queryRef\":\"account.address1_addressid\"},{\"queryRef\":\"account.address1_city\"},{\"queryRef\":\"account.address1_composite\"},{\"queryRef\":\"account.address1_country\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"account\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"accountid\"},\"Name\":\"account.accountid\",\"NativeReferenceName\":\"accountid\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"accountnumber\"},\"Name\":\"account.accountnumber\",\"NativeReferenceName\":\"accountnumber\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"address1_addressid\"},\"Name\":\"account.address1_addressid\",\"NativeReferenceName\":\"address1_addressid\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"address1_city\"},\"Name\":\"account.address1_city\",\"NativeReferenceName\":\"address1_city\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"address1_composite\"},\"Name\":\"account.address1_composite\",\"NativeReferenceName\":\"address1_composite\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"address1_country\"},\"Name\":\"account.address1_country\",\"NativeReferenceName\":\"address1_country\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"297.84272859773864D\"}}}},\"selector\":{\"metadata\":\"account.accountid\"}}]}}}",
+          "filters": "[]",
+          "height": 520.62,
+          "width": 1190.78,
+          "x": 44.31,
+          "y": 99.69,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+relationship 9d0d30f0-7c5d-4887-ba0a-0aeaee63fa89
+	joinOnDateBehavior: datePartOnly
+	fromColumn: account.createdon
+	toColumn: LocalDateTable_b0f3abad-089d-4002-88d6-a116385678b9.Date
+
+relationship 6c5e4985-2c88-466b-b330-e44d540564e7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: account.lastonholdtime
+	toColumn: LocalDateTable_1268f14b-a77e-4fa1-8817-5162675954b7.Date
+
+relationship 1f5281f0-d122-4b49-99f4-5f1dce10cfeb
+	joinOnDateBehavior: datePartOnly
+	fromColumn: account.lastusedincampaign
+	toColumn: LocalDateTable_eff4a54b-4242-47da-af4a-53e23b74679c.Date
+
+relationship 38a55721-368a-47e1-a8e3-6c2fad6247e3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: account.modifiedon
+	toColumn: LocalDateTable_5be89d8b-95a2-42e0-b15d-b646ba145bff.Date
+
+relationship d0e557d0-b9d9-4203-9862-fbdd0630d1e3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: account.overriddencreatedon
+	toColumn: LocalDateTable_ce631815-e4e9-403a-b4e8-fbb8d7c334ee.Date
+
+relationship 6fca14b5-d86d-4b2d-ac63-d9ef5fdaaf83
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'account (2)'.'만든 날짜'
+	toColumn: LocalDateTable_fa25a4c7-c7d2-4b58-8187-17326e8a1322.Date
+
+relationship 0e77b692-34ba-44d8-82aa-9015d67fe973
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'account (2)'.'수정한 날짜'
+	toColumn: LocalDateTable_377ccb9b-8c60-4880-b171-2f122ce6ce3f.Date
+
+relationship 725a1ed9-2d54-4406-95a0-392a5eea8a0a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'account (2)'.'캠페인에 포함된 마지막 날짜'
+	toColumn: LocalDateTable_6abbfc9d-9dc3-4f6e-8cfa-ac04c79f0c9d.Date
+
+relationship cc317d18-0452-4f83-91b4-af0d7bb4b59a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'account (2)'.'레코드를 만든 날짜'
+	toColumn: LocalDateTable_aef14207-016f-49b6-aa12-d68ace0ec543.Date
+
+relationship 8d4ea767-78e9-4e90-a0d2-23deb02db8c6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'account (2)'.'마지막 보류 중 시간'
+	toColumn: LocalDateTable_9d9a18af-59dd-45b8-a18a-db3240825149.Date
+

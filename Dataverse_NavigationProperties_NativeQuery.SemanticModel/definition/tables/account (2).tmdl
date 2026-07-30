@@ -1,0 +1,1815 @@
+table 'account (2)'
+	lineageTag: 77ad56ee-2949-4d7d-8ea6-0519693e4af3
+
+	column 거래처
+		dataType: string
+		lineageTag: 0a8fa180-5900-40a2-9c23-f7558c14f6ee
+		summarizeBy: none
+		sourceColumn: accountid
+
+		annotation SummarizationSetBy = Automatic
+
+	column accountcategorycode
+		dataType: int64
+		formatString: 0
+		lineageTag: d2730857-5147-478c-9993-db265edf4903
+		summarizeBy: sum
+		sourceColumn: accountcategorycode
+
+		annotation SummarizationSetBy = Automatic
+
+	column customersizecode
+		dataType: int64
+		formatString: 0
+		lineageTag: 90e2809b-2f53-4b14-b296-bc65ebf97e87
+		summarizeBy: sum
+		sourceColumn: customersizecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferredcontactmethodcode
+		dataType: int64
+		formatString: 0
+		lineageTag: 3d5418a4-7e52-456a-badc-2f15acb242ff
+		summarizeBy: sum
+		sourceColumn: preferredcontactmethodcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column customertypecode
+		dataType: int64
+		formatString: 0
+		lineageTag: 0b20c870-0693-4c00-a075-6027ea99da56
+		summarizeBy: sum
+		sourceColumn: customertypecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column accountratingcode
+		dataType: int64
+		formatString: 0
+		lineageTag: 5414bce2-6fa2-4923-a5b8-5043a8a39871
+		summarizeBy: sum
+		sourceColumn: accountratingcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column industrycode
+		dataType: int64
+		formatString: 0
+		lineageTag: 636b45dd-48cb-4bd9-88d4-883618f75589
+		summarizeBy: sum
+		sourceColumn: industrycode
+
+		annotation SummarizationSetBy = Automatic
+
+	column territorycode
+		dataType: int64
+		formatString: 0
+		lineageTag: 0ca14d84-4dd6-41c0-8b4c-d50816fe4975
+		summarizeBy: sum
+		sourceColumn: territorycode
+
+		annotation SummarizationSetBy = Automatic
+
+	column accountclassificationcode
+		dataType: int64
+		formatString: 0
+		lineageTag: d1ccba0b-fb35-4732-807a-b3e09be4646e
+		summarizeBy: sum
+		sourceColumn: accountclassificationcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column businesstypecode
+		dataType: int64
+		formatString: 0
+		lineageTag: 8295dc1d-c825-4e79-9fe3-df5db0b6700e
+		summarizeBy: sum
+		sourceColumn: businesstypecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column owningbusinessunit
+		dataType: string
+		lineageTag: fd72fe3c-1cab-49bd-bdc3-a3b80dd0a9b1
+		summarizeBy: none
+		sourceColumn: owningbusinessunit
+
+		annotation SummarizationSetBy = Automatic
+
+	column '(더 이상 사용되지 않음) 통과 경로'
+		dataType: string
+		lineageTag: c5beb6e6-c583-4a3e-ae18-89b2addc4f4f
+		summarizeBy: none
+		sourceColumn: traversedpath
+
+		annotation SummarizationSetBy = Automatic
+
+	column owninguser
+		dataType: string
+		lineageTag: ae76e7c6-ea0d-426b-88d8-36d70db50d05
+		summarizeBy: none
+		sourceColumn: owninguser
+
+		annotation SummarizationSetBy = Automatic
+
+	column paymenttermscode
+		dataType: int64
+		formatString: 0
+		lineageTag: 93394438-8cbb-40e3-96c4-b9e5f4fb3ebe
+		summarizeBy: sum
+		sourceColumn: paymenttermscode
+
+		annotation SummarizationSetBy = Automatic
+
+	column shippingmethodcode
+		dataType: int64
+		formatString: 0
+		lineageTag: 2ba8e572-e72d-48dc-85d3-392e6acfd911
+		summarizeBy: sum
+		sourceColumn: shippingmethodcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column primarycontactid
+		dataType: string
+		lineageTag: 0856f47c-36eb-4bef-a94b-08cc0687cc56
+		summarizeBy: none
+		sourceColumn: primarycontactid
+
+		annotation SummarizationSetBy = Automatic
+
+	column participatesinworkflow
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 8d5ab4c8-96f8-4076-966a-71c65b573783
+		summarizeBy: none
+		sourceColumn: participatesinworkflow
+
+		annotation SummarizationSetBy = Automatic
+
+	column '거래처 이름'
+		dataType: string
+		lineageTag: 4df3787f-7146-48a7-bd67-8b85efbfdb49
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '거래처 번호'
+		dataType: string
+		lineageTag: 1c004f86-93b2-443f-8fcc-913708463133
+		summarizeBy: none
+		sourceColumn: accountnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column '연간 매출'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: 73b7f5a8-87e3-4d4f-a7ba-43928bf0a4d6
+		summarizeBy: sum
+		sourceColumn: revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column '직원 수'
+		dataType: int64
+		formatString: 0
+		lineageTag: 67cd6c6a-638e-4bb8-be66-a2e8dc739735
+		summarizeBy: sum
+		sourceColumn: numberofemployees
+
+		annotation SummarizationSetBy = Automatic
+
+	column 설명
+		dataType: string
+		lineageTag: 817943c7-6471-4705-a92a-549a9d267eee
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SIC 코드'
+		dataType: string
+		lineageTag: 6fda3d9f-d39e-4ca0-9600-7b9104ffcdfe
+		summarizeBy: none
+		sourceColumn: sic
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownershipcode
+		dataType: int64
+		formatString: 0
+		lineageTag: d4922ba7-4592-4f35-b2a4-f8776f3a8b21
+		summarizeBy: sum
+		sourceColumn: ownershipcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '시가 총액'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: d91a9be4-0e20-41ea-9e2c-e212286a3416
+		summarizeBy: sum
+		sourceColumn: marketcap
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column '발행 주식 수'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6962c3fb-6772-4a20-a9ef-d7310725f0b9
+		summarizeBy: sum
+		sourceColumn: sharesoutstanding
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주식 종목 코드'
+		dataType: string
+		lineageTag: 133dc0e1-004a-40d2-b8ec-78d8d93890ab
+		summarizeBy: none
+		sourceColumn: tickersymbol
+
+		annotation SummarizationSetBy = Automatic
+
+	column '증권 거래소'
+		dataType: string
+		lineageTag: 2f1ec97a-5e8c-4291-8448-7cb8753ada2e
+		summarizeBy: none
+		sourceColumn: stockexchange
+
+		annotation SummarizationSetBy = Automatic
+
+	column '웹 사이트'
+		dataType: string
+		lineageTag: 1b9751fb-a9a7-4d2a-9a55-4f44c86f5500
+		summarizeBy: none
+		sourceColumn: websiteurl
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FTP 사이트'
+		dataType: string
+		lineageTag: cc1cf7ab-7ef9-4cc2-968a-53af6be1c0d0
+		summarizeBy: none
+		sourceColumn: ftpsiteurl
+
+		annotation SummarizationSetBy = Automatic
+
+	column '전자 메일'
+		dataType: string
+		lineageTag: fe60f3c0-5db6-464f-9c95-7c2d3f6c744a
+		summarizeBy: none
+		sourceColumn: emailaddress1
+
+		annotation SummarizationSetBy = Automatic
+
+	column '전자 메일 주소 2'
+		dataType: string
+		lineageTag: 6d80d7f4-824f-4ddc-b33c-a9ae09ae5b3e
+		summarizeBy: none
+		sourceColumn: emailaddress2
+
+		annotation SummarizationSetBy = Automatic
+
+	column '전자 메일 주소 3'
+		dataType: string
+		lineageTag: c4be4504-b79d-466d-a9ea-7130155c0024
+		summarizeBy: none
+		sourceColumn: emailaddress3
+
+		annotation SummarizationSetBy = Automatic
+
+	column donotphone
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 6fef1809-19f6-4b05-b635-1cfadd3e1315
+		summarizeBy: none
+		sourceColumn: donotphone
+
+		annotation SummarizationSetBy = Automatic
+
+	column donotfax
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 9ddabf1b-69b2-42e7-850a-69bdc8371430
+		summarizeBy: none
+		sourceColumn: donotfax
+
+		annotation SummarizationSetBy = Automatic
+
+	column '기본 전화'
+		dataType: string
+		lineageTag: 10945a5c-a8d1-4614-bcc7-e1d0b544ba79
+		summarizeBy: none
+		sourceColumn: telephone1
+
+		annotation SummarizationSetBy = Automatic
+
+	column donotemail
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 2b98e4f0-bd2f-42b4-90ce-de3d181b098e
+		summarizeBy: none
+		sourceColumn: donotemail
+
+		annotation SummarizationSetBy = Automatic
+
+	column '기타 전화'
+		dataType: string
+		lineageTag: eee3dd6d-3659-4dca-a4fd-b7ea604255fa
+		summarizeBy: none
+		sourceColumn: telephone2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 팩스
+		dataType: string
+		lineageTag: 45616e47-9701-4968-a1cc-4685080d83b1
+		summarizeBy: none
+		sourceColumn: fax
+
+		annotation SummarizationSetBy = Automatic
+
+	column '전화 번호 3'
+		dataType: string
+		lineageTag: c1415365-14a3-4467-96aa-154bf6dbcec4
+		summarizeBy: none
+		sourceColumn: telephone3
+
+		annotation SummarizationSetBy = Automatic
+
+	column donotpostalmail
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 6f5e0c0b-b65e-41d7-b24f-bb30c04fe4bb
+		summarizeBy: none
+		sourceColumn: donotpostalmail
+
+		annotation SummarizationSetBy = Automatic
+
+	column donotbulkemail
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: e8d1ceb0-0878-47bc-a19f-72f2dab93b24
+		summarizeBy: none
+		sourceColumn: donotbulkemail
+
+		annotation SummarizationSetBy = Automatic
+
+	column donotbulkpostalmail
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 1192b3d5-f8e0-4c5c-a69a-d144918626aa
+		summarizeBy: none
+		sourceColumn: donotbulkpostalmail
+
+		annotation SummarizationSetBy = Automatic
+
+	column '신용 한도액'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: faee2caf-a4b8-4500-96a0-910d411fd658
+		summarizeBy: sum
+		sourceColumn: creditlimit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column creditonhold
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 58678fb5-1058-4b31-95fe-0ad54102dd4f
+		summarizeBy: none
+		sourceColumn: creditonhold
+
+		annotation SummarizationSetBy = Automatic
+
+	column '만든 날짜'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5b127095-a3c9-40e9-8a78-72d2f585d678
+		summarizeBy: none
+		sourceColumn: createdon
+
+		variation Variation
+			isDefault
+			relationship: 6fca14b5-d86d-4b2d-ac63-d9ef5fdaaf83
+			defaultHierarchy: LocalDateTable_fa25a4c7-c7d2-4b58-8187-17326e8a1322.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdby
+		dataType: string
+		lineageTag: e2ec72ae-fc59-4af3-b2d8-8c4f3a895cb4
+		summarizeBy: none
+		sourceColumn: createdby
+
+		annotation SummarizationSetBy = Automatic
+
+	column '수정한 날짜'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b9d90c1b-9bf0-4d1d-a9fd-d2b32a7e47bb
+		summarizeBy: none
+		sourceColumn: modifiedon
+
+		variation Variation
+			isDefault
+			relationship: 0e77b692-34ba-44d8-82aa-9015d67fe973
+			defaultHierarchy: LocalDateTable_377ccb9b-8c60-4880-b171-2f122ce6ce3f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedby
+		dataType: string
+		lineageTag: 91a37308-7dfd-41f3-8308-401826a8bf57
+		summarizeBy: none
+		sourceColumn: modifiedby
+
+		annotation SummarizationSetBy = Automatic
+
+	column parentaccountid
+		dataType: string
+		lineageTag: 40137181-66ae-4347-b709-b9b266c53ad3
+		summarizeBy: none
+		sourceColumn: parentaccountid
+
+		annotation SummarizationSetBy = Automatic
+
+	column '30일 유예 기간'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: 03af84d0-3cc2-4f42-8eb4-a6116d4178c6
+		summarizeBy: sum
+		sourceColumn: aging30
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column 상태
+		dataType: int64
+		formatString: 0
+		lineageTag: 66d48542-72e2-4378-9e23-d2370c77f42a
+		summarizeBy: sum
+		sourceColumn: statecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '60일 유예 기간'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: 1be7380e-5df2-40ef-942e-432bbc669307
+		summarizeBy: sum
+		sourceColumn: aging60
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column '상태 설명'
+		dataType: int64
+		formatString: 0
+		lineageTag: 32c85600-8101-4c02-93af-f13b90460232
+		summarizeBy: sum
+		sourceColumn: statuscode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '90일 유예 기간'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: 25ea7ec5-4f88-4a9d-a977-ce70b7046e6a
+		summarizeBy: sum
+		sourceColumn: aging90
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column '기본 연락처'
+		dataType: string
+		lineageTag: 7dece3c7-da97-4c73-a793-7ced2c68ff50
+		summarizeBy: none
+		sourceColumn: primarycontactidname
+
+		annotation SummarizationSetBy = Automatic
+
+	column '상위 거래처'
+		dataType: string
+		lineageTag: f654fd1d-4c57-4b41-8d2d-cdd65dfb0eb8
+		summarizeBy: none
+		sourceColumn: parentaccountidname
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: ID'
+		dataType: string
+		lineageTag: ccb9f9a6-1414-4e4c-bb5d-0c9df609903a
+		summarizeBy: none
+		sourceColumn: address1_addressid
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_addresstypecode
+		dataType: int64
+		formatString: 0
+		lineageTag: 288e911a-4ac7-4357-9643-3158379d14a7
+		summarizeBy: sum
+		sourceColumn: address1_addresstypecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 이름'
+		dataType: string
+		lineageTag: c4e65bce-3808-4352-8e31-2bd60e3d5718
+		summarizeBy: none
+		sourceColumn: address1_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 기본 연락처 이름'
+		dataType: string
+		lineageTag: b7ac3fc0-6fd8-4b6a-9813-1c19f4853362
+		summarizeBy: none
+		sourceColumn: address1_primarycontactname
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 나머지 주소'
+		dataType: string
+		lineageTag: e3b6f45e-a35e-4093-8109-c529deea0a1a
+		summarizeBy: none
+		sourceColumn: address1_line1
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 나머지 주소 2'
+		dataType: string
+		lineageTag: 087a1937-5e6c-48cd-97b1-e7c31bee3153
+		summarizeBy: none
+		sourceColumn: address1_line2
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 나머지 주소 3'
+		dataType: string
+		lineageTag: 22fa58f6-8dfd-4230-905d-d1772538b21f
+		summarizeBy: none
+		sourceColumn: address1_line3
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 구/군/시'
+		dataType: string
+		lineageTag: 0e64427c-e9ba-43da-b682-65edbddc0e89
+		summarizeBy: none
+		sourceColumn: address1_city
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 시/도'
+		dataType: string
+		lineageTag: 69ca16a9-1fcf-467f-bd53-51efb21e14e7
+		summarizeBy: none
+		sourceColumn: address1_stateorprovince
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 군'
+		dataType: string
+		lineageTag: c1392943-5866-40f5-8263-6bf97564d808
+		summarizeBy: none
+		sourceColumn: address1_county
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 국가/지역'
+		dataType: string
+		lineageTag: 44b6551e-687a-447b-acd3-f2d9b3df4f9e
+		summarizeBy: none
+		sourceColumn: address1_country
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 사서함'
+		dataType: string
+		lineageTag: 9099c3c3-87f9-44e3-88a6-4b3ed7cb54df
+		summarizeBy: none
+		sourceColumn: address1_postofficebox
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 우편 번호'
+		dataType: string
+		lineageTag: 7588d638-fec5-41d9-bae7-61ca646f23a2
+		summarizeBy: none
+		sourceColumn: address1_postalcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: UTC 시차'
+		dataType: int64
+		formatString: 0
+		lineageTag: a7ea6089-1eb0-476c-b8c7-dfeb099381ed
+		summarizeBy: sum
+		sourceColumn: address1_utcoffset
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_freighttermscode
+		dataType: int64
+		formatString: 0
+		lineageTag: 612e717c-b1bf-4c36-9b3f-cc143f4d529f
+		summarizeBy: sum
+		sourceColumn: address1_freighttermscode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: UPS 영역'
+		dataType: string
+		lineageTag: 6779d320-2207-4f39-be7f-9d8c62aee756
+		summarizeBy: none
+		sourceColumn: address1_upszone
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 위도'
+		dataType: double
+		lineageTag: 028dd8d4-9436-413b-84f2-61260558094b
+		summarizeBy: sum
+		sourceColumn: address1_latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '주소지 전화 번호'
+		dataType: string
+		lineageTag: cbb46e02-23df-42b7-9f5b-041e2915dbea
+		summarizeBy: none
+		sourceColumn: address1_telephone1
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 경도'
+		dataType: double
+		lineageTag: 1b90cb5d-8a14-479a-b908-b62a5d7bdb57
+		summarizeBy: sum
+		sourceColumn: address1_longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column address1_shippingmethodcode
+		dataType: int64
+		formatString: 0
+		lineageTag: 783b12f8-8944-46c4-bff7-818664d25a87
+		summarizeBy: sum
+		sourceColumn: address1_shippingmethodcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 전화 번호 2'
+		dataType: string
+		lineageTag: 5bed51c7-93b2-485f-98ee-687a9e36191e
+		summarizeBy: none
+		sourceColumn: address1_telephone2
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 전화 번호 3'
+		dataType: string
+		lineageTag: a6d0c249-da4e-4265-a81f-4219e4b9d6aa
+		summarizeBy: none
+		sourceColumn: address1_telephone3
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 팩스'
+		dataType: string
+		lineageTag: 90b08d26-9475-47c3-9582-c6f7b9090eee
+		summarizeBy: none
+		sourceColumn: address1_fax
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: ID'
+		dataType: string
+		lineageTag: 39b72e1a-3a9a-453e-b8ed-98670c05ee2c
+		summarizeBy: none
+		sourceColumn: address2_addressid
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_addresstypecode
+		dataType: int64
+		formatString: 0
+		lineageTag: ae42e2bc-2a10-4212-b69e-3b8b3a28db6e
+		summarizeBy: sum
+		sourceColumn: address2_addresstypecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 이름'
+		dataType: string
+		lineageTag: a3b20081-bd00-4fee-9b7d-073f4f214b99
+		summarizeBy: none
+		sourceColumn: address2_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 기본 연락처 이름'
+		dataType: string
+		lineageTag: fcda54f4-4934-4114-8624-04eec3843908
+		summarizeBy: none
+		sourceColumn: address2_primarycontactname
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 나머지 주소'
+		dataType: string
+		lineageTag: 84fe3642-6ff7-4011-b07b-ccd3ee054d37
+		summarizeBy: none
+		sourceColumn: address2_line1
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 나머지 주소 2'
+		dataType: string
+		lineageTag: 8399b0d9-5375-42f8-a1f0-6766e462a891
+		summarizeBy: none
+		sourceColumn: address2_line2
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 나머지 주소 3'
+		dataType: string
+		lineageTag: 68398c33-cf42-4379-901f-b922b5c29377
+		summarizeBy: none
+		sourceColumn: address2_line3
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 구/군/시'
+		dataType: string
+		lineageTag: 8107839d-79ab-4ec4-967e-534a159f706e
+		summarizeBy: none
+		sourceColumn: address2_city
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 시/도'
+		dataType: string
+		lineageTag: 3bdfe015-c615-4cc9-bdce-07df6bb1db3f
+		summarizeBy: none
+		sourceColumn: address2_stateorprovince
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 군'
+		dataType: string
+		lineageTag: a5b3137a-ef96-4169-acd3-88b3b787bcc1
+		summarizeBy: none
+		sourceColumn: address2_county
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 국가/지역'
+		dataType: string
+		lineageTag: f5808f4d-ab47-4bba-901d-31aaa7dbbc81
+		summarizeBy: none
+		sourceColumn: address2_country
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 사서함'
+		dataType: string
+		lineageTag: d05bea35-1b17-4260-91f7-f5c5533279a5
+		summarizeBy: none
+		sourceColumn: address2_postofficebox
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 우편 번호'
+		dataType: string
+		lineageTag: c07a95de-a993-4dbb-be9e-1802fb61b137
+		summarizeBy: none
+		sourceColumn: address2_postalcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: UTC 시차'
+		dataType: int64
+		formatString: 0
+		lineageTag: 05715d8f-494d-463c-9cdb-24ad77925a56
+		summarizeBy: sum
+		sourceColumn: address2_utcoffset
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_freighttermscode
+		dataType: int64
+		formatString: 0
+		lineageTag: 93d5ebbf-132e-4dd2-86c9-bd2313838548
+		summarizeBy: sum
+		sourceColumn: address2_freighttermscode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: UPS 영역'
+		dataType: string
+		lineageTag: d892ca90-e4fe-4edb-afb1-58ca94206fd3
+		summarizeBy: none
+		sourceColumn: address2_upszone
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 위도'
+		dataType: double
+		lineageTag: 50d09c60-0992-4d33-9673-02fcb368de6a
+		summarizeBy: sum
+		sourceColumn: address2_latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '주소 2: 전화 번호 1'
+		dataType: string
+		lineageTag: b2ae75d1-a64a-4f40-aa77-a1ca648a27b0
+		summarizeBy: none
+		sourceColumn: address2_telephone1
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 경도'
+		dataType: double
+		lineageTag: 1615346e-798e-425c-b873-284b47a701f6
+		summarizeBy: sum
+		sourceColumn: address2_longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column address2_shippingmethodcode
+		dataType: int64
+		formatString: 0
+		lineageTag: e4aa8422-21dd-4861-ae07-80e360c6a2a3
+		summarizeBy: sum
+		sourceColumn: address2_shippingmethodcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 전화 번호 2'
+		dataType: string
+		lineageTag: d164e5d9-0abe-41ef-b79d-a128d1c7114a
+		summarizeBy: none
+		sourceColumn: address2_telephone2
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 전화 번호 3'
+		dataType: string
+		lineageTag: 4c9395c2-1c22-46b6-b878-68679b49808b
+		summarizeBy: none
+		sourceColumn: address2_telephone3
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 팩스'
+		dataType: string
+		lineageTag: c837f2d4-e47e-4e9c-af82-a19d8a9c2d9a
+		summarizeBy: none
+		sourceColumn: address2_fax
+
+		annotation SummarizationSetBy = Automatic
+
+	column '만든 사람'
+		dataType: string
+		lineageTag: 4f9d62e2-1d6b-4e56-b1c5-0f22067cacad
+		summarizeBy: none
+		sourceColumn: createdbyname
+
+		annotation SummarizationSetBy = Automatic
+
+	column '수정한 사람'
+		dataType: string
+		lineageTag: 9b8043b6-11a1-4f88-a6b6-0345c6a7c750
+		summarizeBy: none
+		sourceColumn: modifiedbyname
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownerid
+		dataType: string
+		lineageTag: 21b73988-2628-496f-98ac-0b1483651e24
+		summarizeBy: none
+		sourceColumn: ownerid
+
+		annotation SummarizationSetBy = Automatic
+
+	column 담당자
+		dataType: string
+		lineageTag: 4058d71d-e217-413c-8b6d-8b15c587841b
+		summarizeBy: none
+		sourceColumn: owneridname
+
+		annotation SummarizationSetBy = Automatic
+
+	column '팩스 허용 안 함'
+		dataType: string
+		lineageTag: 461240d6-b09c-4416-b3e3-e0fcb0ab7fd8
+		summarizeBy: none
+		sourceColumn: donotfaxname
+
+		annotation SummarizationSetBy = Automatic
+
+	column '전화 통화 허용 안 함'
+		dataType: string
+		lineageTag: 811373ce-9f21-44b7-a84c-f7cde370ae1b
+		summarizeBy: none
+		sourceColumn: donotphonename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '대량 우편 허용 안 함'
+		dataType: string
+		lineageTag: 388c1f52-2258-4fc7-9e34-4e0468d6078d
+		summarizeBy: none
+		sourceColumn: donotbulkpostalmailname
+
+		annotation SummarizationSetBy = Automatic
+
+	column '신용 보류'
+		dataType: string
+		lineageTag: 5ada1653-33a8-4165-9589-03f8895fd264
+		summarizeBy: none
+		sourceColumn: creditonholdname
+
+		annotation SummarizationSetBy = Automatic
+
+	column '전자 메일 허용 안 함'
+		dataType: string
+		lineageTag: 1432303c-fcf0-45af-87f7-30dc760c7e67
+		summarizeBy: none
+		sourceColumn: donotemailname
+
+		annotation SummarizationSetBy = Automatic
+
+	column isprivatename
+		dataType: string
+		lineageTag: bd294d74-8e57-4457-917a-d6849145db53
+		summarizeBy: none
+		sourceColumn: isprivatename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '우편 허용 안 함'
+		dataType: string
+		lineageTag: e5e285e2-b409-4df9-a25f-7d7caab19d50
+		summarizeBy: none
+		sourceColumn: donotpostalmailname
+
+		annotation SummarizationSetBy = Automatic
+
+	column '워크플로에 관여'
+		dataType: string
+		lineageTag: 70954a86-6520-4b41-8b75-2e8571311931
+		summarizeBy: none
+		sourceColumn: participatesinworkflowname
+
+		annotation SummarizationSetBy = Automatic
+
+	column '대량 전자 메일 허용 안 함'
+		dataType: string
+		lineageTag: 10dfc2db-9f8b-4221-9da5-f4842726293b
+		summarizeBy: none
+		sourceColumn: donotbulkemailname
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 운송 방법'
+		dataType: string
+		lineageTag: 33ef02a7-8065-404b-9f29-684f69e8f424
+		summarizeBy: none
+		sourceColumn: address1_shippingmethodcodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column 산업
+		dataType: string
+		lineageTag: b4b4840f-d326-45a7-90e1-0c683a287128
+		summarizeBy: none
+		sourceColumn: industrycodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '거래처 등급'
+		dataType: string
+		lineageTag: 409d5d65-97a4-499f-9a03-68a3bf4772a7
+		summarizeBy: none
+		sourceColumn: accountratingcodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '소유권 형태'
+		dataType: string
+		lineageTag: 7ba5d750-8912-4ad9-8c4f-e396b3e98df7
+		summarizeBy: none
+		sourceColumn: ownershipcodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column 분류
+		dataType: string
+		lineageTag: ec6918dd-01b3-4780-bbee-afba83a348d9
+		summarizeBy: none
+		sourceColumn: accountclassificationcodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '고객 규모'
+		dataType: string
+		lineageTag: eb7454ad-0d04-4712-9a49-b92829644250
+		summarizeBy: none
+		sourceColumn: customersizecodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column statecodename
+		dataType: string
+		lineageTag: df7b2847-5c04-4648-8b53-067c44c33624
+		summarizeBy: none
+		sourceColumn: statecodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '운송 방법'
+		dataType: string
+		lineageTag: fb9b13df-291f-49d3-ab0b-1f53c189fd64
+		summarizeBy: none
+		sourceColumn: shippingmethodcodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 운송료 조건'
+		dataType: string
+		lineageTag: f24118d8-2c1c-44e4-b6d0-3bebcb686aa2
+		summarizeBy: none
+		sourceColumn: address1_freighttermscodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '비즈니스 종류'
+		dataType: string
+		lineageTag: feb740af-e774-4320-bb8f-629b18fbad58
+		summarizeBy: none
+		sourceColumn: businesstypecodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 운송료 조건'
+		dataType: string
+		lineageTag: 8318bee7-036c-4ff7-b4db-07d4c60883e0
+		summarizeBy: none
+		sourceColumn: address2_freighttermscodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column 범주
+		dataType: string
+		lineageTag: 97e9b352-a8c7-4f25-958f-09aa16a9086c
+		summarizeBy: none
+		sourceColumn: accountcategorycodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '지불 조건'
+		dataType: string
+		lineageTag: a7e8d4aa-3f15-4b11-b817-e8db05cd6677
+		summarizeBy: none
+		sourceColumn: paymenttermscodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '선호 연락 방법'
+		dataType: string
+		lineageTag: 472aa6d2-9179-4d9f-9494-c8cc3bcde963
+		summarizeBy: none
+		sourceColumn: preferredcontactmethodcodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '지역 코드'
+		dataType: string
+		lineageTag: 46d62e30-ada5-4606-91e9-40ea6b6d22ec
+		summarizeBy: none
+		sourceColumn: territorycodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscodename
+		dataType: string
+		lineageTag: bffec9ea-9742-4172-ac3c-9fd3c1cfd87e
+		summarizeBy: none
+		sourceColumn: statuscodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '관계 유형'
+		dataType: string
+		lineageTag: fd62a983-13ad-4402-8cf4-82130bf17f6f
+		summarizeBy: none
+		sourceColumn: customertypecodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1: 주소 유형'
+		dataType: string
+		lineageTag: 89e10ea3-826c-470a-bf60-08a749084d93
+		summarizeBy: none
+		sourceColumn: address1_addresstypecodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 운송 방법'
+		dataType: string
+		lineageTag: 2d410ab1-4b0e-4d8e-bc18-540b56205c0e
+		summarizeBy: none
+		sourceColumn: address2_shippingmethodcodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2: 주소 유형'
+		dataType: string
+		lineageTag: 9790b337-e63a-48ce-a9b4-6ad371562d11
+		summarizeBy: none
+		sourceColumn: address2_addresstypecodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferredappointmentdaycode
+		dataType: int64
+		formatString: 0
+		lineageTag: c76ea80f-061a-4760-9b93-055224ffe30c
+		summarizeBy: sum
+		sourceColumn: preferredappointmentdaycode
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferredsystemuserid
+		dataType: string
+		lineageTag: cd5925fb-9cfe-4997-8391-70f70ca61568
+		summarizeBy: none
+		sourceColumn: preferredsystemuserid
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferredappointmenttimecode
+		dataType: int64
+		formatString: 0
+		lineageTag: d564ac5d-15f3-4d57-874b-466cd6bcc65a
+		summarizeBy: sum
+		sourceColumn: preferredappointmenttimecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column merged
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: eef76ee9-08ff-4325-ad22-9c41ae818165
+		summarizeBy: none
+		sourceColumn: merged
+
+		annotation SummarizationSetBy = Automatic
+
+	column donotsendmm
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 96727850-a07f-47fb-a06a-01f3dda81d42
+		summarizeBy: none
+		sourceColumn: donotsendmm
+
+		annotation SummarizationSetBy = Automatic
+
+	column masterid
+		dataType: string
+		lineageTag: 8f184bea-b3ce-45b8-a3de-16be9504c3b4
+		summarizeBy: none
+		sourceColumn: masterid
+
+		annotation SummarizationSetBy = Automatic
+
+	column '캠페인에 포함된 마지막 날짜'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 88c99287-4d4c-4da7-964e-8761b184e172
+		summarizeBy: none
+		sourceColumn: lastusedincampaign
+
+		variation Variation
+			isDefault
+			relationship: 725a1ed9-2d54-4406-95a0-392a5eea8a0a
+			defaultHierarchy: LocalDateTable_6abbfc9d-9dc3-4f6e-8cfa-ac04c79f0c9d.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column '선호 시간'
+		dataType: string
+		lineageTag: 8c82a1cc-01a0-4169-a277-9170f3a0c2f7
+		summarizeBy: none
+		sourceColumn: preferredappointmenttimecodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '선호 요일'
+		dataType: string
+		lineageTag: 29ff9112-b539-432d-9a46-969ad84e29d0
+		summarizeBy: none
+		sourceColumn: preferredappointmentdaycodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column '선호 사용자'
+		dataType: string
+		lineageTag: 6053caa3-34ec-4b5e-82da-638f11835f3b
+		summarizeBy: none
+		sourceColumn: preferredsystemuseridname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 병합됨
+		dataType: string
+		lineageTag: 301b7bc7-4784-4024-940a-74152d4f539d
+		summarizeBy: none
+		sourceColumn: mergedname
+
+		annotation SummarizationSetBy = Automatic
+
+	column masteraccountidname
+		dataType: string
+		lineageTag: b3609eed-228b-4959-9e9d-51e4187b8e97
+		summarizeBy: none
+		sourceColumn: masteraccountidname
+
+		annotation SummarizationSetBy = Automatic
+
+	column donotsendmarketingmaterialname
+		dataType: string
+		lineageTag: e269c0ac-d7b8-4afe-a0e5-8b3ed5e96514
+		summarizeBy: none
+		sourceColumn: donotsendmarketingmaterialname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 환율
+		dataType: double
+		lineageTag: bc362cec-0e48-4269-af8c-6e3844bd7fa7
+		summarizeBy: sum
+		sourceColumn: exchangerate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'UTC 변환 표준 시간대 코드'
+		dataType: int64
+		formatString: 0
+		lineageTag: b0984cad-b2f8-4fdc-b43c-222aed7a028f
+		summarizeBy: sum
+		sourceColumn: utcconversiontimezonecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column '레코드를 만든 날짜'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 364bf163-abfb-43fd-a3a4-075601e48762
+		summarizeBy: none
+		sourceColumn: overriddencreatedon
+
+		variation Variation
+			isDefault
+			relationship: cc317d18-0452-4f83-91b4-af0d7bb4b59a
+			defaultHierarchy: LocalDateTable_aef14207-016f-49b6-aa12-d68ace0ec543.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column '표준 시간대 규칙 버전 번호'
+		dataType: int64
+		formatString: 0
+		lineageTag: 5ef52b7f-fddf-41b0-a5b9-d36bae764ccf
+		summarizeBy: sum
+		sourceColumn: timezoneruleversionnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column '가져오기 시퀀스 번호'
+		dataType: int64
+		formatString: 0
+		lineageTag: d605af09-ba93-40aa-9f7c-9e5a8689d087
+		summarizeBy: sum
+		sourceColumn: importsequencenumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column transactioncurrencyid
+		dataType: string
+		lineageTag: b829f2fb-ed0f-4581-bb3b-5d2af99766a1
+		summarizeBy: none
+		sourceColumn: transactioncurrencyid
+
+		annotation SummarizationSetBy = Automatic
+
+	column '신용 한도액(기본)'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: e103f018-c3f9-4f2a-8153-4ae94e984428
+		summarizeBy: sum
+		sourceColumn: creditlimit_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column 통화
+		dataType: string
+		lineageTag: 50116dd0-5e5b-4e73-86e2-5efed14e9335
+		summarizeBy: none
+		sourceColumn: transactioncurrencyidname
+
+		annotation SummarizationSetBy = Automatic
+
+	column '30일 유예 기간(기본)'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: 567790a7-a91d-4508-b233-7a41c5177f7c
+		summarizeBy: sum
+		sourceColumn: aging30_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column '연간 매출(기본)'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: c9034646-a68f-44aa-bac7-8df6e7661c26
+		summarizeBy: sum
+		sourceColumn: revenue_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column '90일 유예 기간(기본)'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: f93f11fc-e783-4010-b2b4-b35d9629a5df
+		summarizeBy: sum
+		sourceColumn: aging90_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column '시가 총액(기본)'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: 175e707b-8c5f-42f6-a648-c40274852443
+		summarizeBy: sum
+		sourceColumn: marketcap_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column '60일 유예 기간(기본)'
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: bbe6aac3-07e4-4f0e-98e5-319432792aae
+		summarizeBy: sum
+		sourceColumn: aging60_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column preferredsystemuseridyominame
+		dataType: string
+		lineageTag: fd0cf29c-6d11-4b48-90ba-e8f038a94737
+		summarizeBy: none
+		sourceColumn: preferredsystemuseridyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column parentaccountidyominame
+		dataType: string
+		lineageTag: 1948c4c2-9034-43be-9523-5a1b2e931689
+		summarizeBy: none
+		sourceColumn: parentaccountidyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column masteraccountidyominame
+		dataType: string
+		lineageTag: 7efd879d-af9c-4d62-b79c-fd61e9bc4da0
+		summarizeBy: none
+		sourceColumn: masteraccountidyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column primarycontactidyominame
+		dataType: string
+		lineageTag: 2b8a8cda-c9fd-40ce-9df8-8d8f59e55a87
+		summarizeBy: none
+		sourceColumn: primarycontactidyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column owneridyominame
+		dataType: string
+		lineageTag: 0ad46652-d189-422e-9a5b-b43b01e016b6
+		summarizeBy: none
+		sourceColumn: owneridyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column '거래처 이름(일본어 요미)'
+		dataType: string
+		lineageTag: cbd55e19-ad67-4e0d-97f1-ca70c9daf512
+		summarizeBy: none
+		sourceColumn: yominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdbyyominame
+		dataType: string
+		lineageTag: 716fc3bf-dac8-4290-af35-6bd7fa672861
+		summarizeBy: none
+		sourceColumn: createdbyyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedbyyominame
+		dataType: string
+		lineageTag: 29ceb240-364c-4db1-b34c-cbcd49ca2652
+		summarizeBy: none
+		sourceColumn: modifiedbyyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdonbehalfby
+		dataType: string
+		lineageTag: 744f5298-8db8-4604-897f-c27f8927a076
+		summarizeBy: none
+		sourceColumn: createdonbehalfby
+
+		annotation SummarizationSetBy = Automatic
+
+	column '만든 사람(대리인)'
+		dataType: string
+		lineageTag: e7dfdb4b-7f59-42e5-8c50-2581f5bb5c36
+		summarizeBy: none
+		sourceColumn: createdonbehalfbyname
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdonbehalfbyyominame
+		dataType: string
+		lineageTag: 5cbb730a-ee68-4815-a886-07ddcfd62287
+		summarizeBy: none
+		sourceColumn: createdonbehalfbyyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedonbehalfby
+		dataType: string
+		lineageTag: 0afa51eb-3508-4f8d-9048-32a0e8677ebf
+		summarizeBy: none
+		sourceColumn: modifiedonbehalfby
+
+		annotation SummarizationSetBy = Automatic
+
+	column '수정한 사람(대리인)'
+		dataType: string
+		lineageTag: db7dc35c-d7f1-40ed-8689-3705b2030152
+		summarizeBy: none
+		sourceColumn: modifiedonbehalfbyname
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedonbehalfbyyominame
+		dataType: string
+		lineageTag: ef28c5e7-941f-45a7-abbc-e2d4fc41a7df
+		summarizeBy: none
+		sourceColumn: modifiedonbehalfbyyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column owningteam
+		dataType: string
+		lineageTag: 6d2068e3-237f-4402-a152-a86863db5056
+		summarizeBy: none
+		sourceColumn: owningteam
+
+		annotation SummarizationSetBy = Automatic
+
+	column '(더 이상 사용되지 않음) 프로세스 스테이지'
+		dataType: string
+		lineageTag: 8212cac6-998a-4798-aeb1-eb771edd1584
+		summarizeBy: none
+		sourceColumn: stageid
+
+		annotation SummarizationSetBy = Automatic
+
+	column 프로세스
+		dataType: string
+		lineageTag: 4c3e575b-f8a2-429d-a6dd-23dfa8a0bba5
+		summarizeBy: none
+		sourceColumn: processid
+
+		annotation SummarizationSetBy = Automatic
+
+	column entityimage_url
+		dataType: string
+		lineageTag: 3a4860f0-84fc-4cba-a813-73a5b0a7df16
+		summarizeBy: none
+		sourceColumn: entityimage_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 2'
+		dataType: string
+		lineageTag: c0199d96-294d-4a80-8ca0-c29b1a918be1
+		summarizeBy: none
+		sourceColumn: address2_composite
+
+		annotation SummarizationSetBy = Automatic
+
+	column '주소 1'
+		dataType: string
+		lineageTag: 8252a185-8fe6-4702-a674-88df183b2036
+		summarizeBy: none
+		sourceColumn: address1_composite
+
+		annotation SummarizationSetBy = Automatic
+
+	column '엔터티 이미지 ID'
+		dataType: string
+		lineageTag: 290a957b-5b58-4613-a559-8406b8cf7dd7
+		summarizeBy: none
+		sourceColumn: entityimageid
+
+		annotation SummarizationSetBy = Automatic
+
+	column '내가 소요한 시간'
+		dataType: string
+		lineageTag: 19f79ac5-7351-4998-a526-21f252bab5c3
+		summarizeBy: none
+		sourceColumn: timespentbymeonemailandmeetings
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdbyexternalparty
+		dataType: string
+		lineageTag: e0530e0c-b112-41ae-be2a-df33073a5740
+		summarizeBy: none
+		sourceColumn: createdbyexternalparty
+
+		annotation SummarizationSetBy = Automatic
+
+	column '만든 사람(외부 대상)'
+		dataType: string
+		lineageTag: 76f6d71d-02ce-4e01-80c3-76becb3c4108
+		summarizeBy: none
+		sourceColumn: createdbyexternalpartyname
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdbyexternalpartyyominame
+		dataType: string
+		lineageTag: d429f6d3-d552-4d02-9e92-af46d078a55e
+		summarizeBy: none
+		sourceColumn: createdbyexternalpartyyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedbyexternalparty
+		dataType: string
+		lineageTag: 1601728c-1a2a-4161-9cf7-42d9bf016391
+		summarizeBy: none
+		sourceColumn: modifiedbyexternalparty
+
+		annotation SummarizationSetBy = Automatic
+
+	column '수정한 사람(외부 대상)'
+		dataType: string
+		lineageTag: 904549a3-a0fe-4220-b8d3-f00ac8bc8bae
+		summarizeBy: none
+		sourceColumn: modifiedbyexternalpartyname
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedbyexternalpartyyominame
+		dataType: string
+		lineageTag: 0b191d58-e971-492c-9f92-1c8b048a7ce2
+		summarizeBy: none
+		sourceColumn: modifiedbyexternalpartyyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column '기본 Satori ID'
+		dataType: string
+		lineageTag: d3e2aafa-c273-48ef-a2ef-40664f7aac08
+		summarizeBy: none
+		sourceColumn: primarysatoriid
+
+		annotation SummarizationSetBy = Automatic
+
+	column '기본 Twitter ID'
+		dataType: string
+		lineageTag: a1e48ebd-cccc-4553-a3bf-4d7e1067ed95
+		summarizeBy: none
+		sourceColumn: primarytwitterid
+
+		annotation SummarizationSetBy = Automatic
+
+	column slaid
+		dataType: string
+		lineageTag: 5955ba64-d5aa-472b-a7d7-27a0310789ee
+		summarizeBy: none
+		sourceColumn: slaid
+
+		annotation SummarizationSetBy = Automatic
+
+	column slaname
+		dataType: string
+		lineageTag: 0972131f-4e81-47e6-bd10-da0a2aba7103
+		summarizeBy: none
+		sourceColumn: slaname
+
+		annotation SummarizationSetBy = Automatic
+
+	column slainvokedid
+		dataType: string
+		lineageTag: d26fbd00-99cc-47de-ba1a-0b677a6ab0a7
+		summarizeBy: none
+		sourceColumn: slainvokedid
+
+		annotation SummarizationSetBy = Automatic
+
+	column '보류 중 시간(분)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 31de8ab9-8549-4e30-826e-a33e03643d93
+		summarizeBy: sum
+		sourceColumn: onholdtime
+
+		annotation SummarizationSetBy = Automatic
+
+	column '마지막 보류 중 시간'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 305d85f9-ecee-4551-b792-6904c8a7718f
+		summarizeBy: none
+		sourceColumn: lastonholdtime
+
+		variation Variation
+			isDefault
+			relationship: 8d4ea767-78e9-4e90-a0d2-23deb02db8c6
+			defaultHierarchy: LocalDateTable_9d9a18af-59dd-45b8-a18a-db3240825149.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column '적용된 마지막 SLA'
+		dataType: string
+		lineageTag: f44e37e8-da0c-4d0a-b186-682863366c7d
+		summarizeBy: none
+		sourceColumn: slainvokedidname
+
+		annotation SummarizationSetBy = Automatic
+
+	column followemail
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: edfe97b6-e8a9-4fb1-bc9f-3e3cd017ff79
+		summarizeBy: none
+		sourceColumn: followemail
+
+		annotation SummarizationSetBy = Automatic
+
+	column '전자 메일 활동 팔로우'
+		dataType: string
+		lineageTag: 6d68c799-b471-41e7-bae6-ac744926a085
+		summarizeBy: none
+		sourceColumn: followemailname
+
+		annotation SummarizationSetBy = Automatic
+
+	column marketingonly
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 4c414ba2-0801-4f25-874c-3682ddcaf01f
+		summarizeBy: none
+		sourceColumn: marketingonly
+
+		annotation SummarizationSetBy = Automatic
+
+	column '마케팅 전용'
+		dataType: string
+		lineageTag: 69d1c9f6-ceb9-4fa0-ae25-aa5800ebf213
+		summarizeBy: none
+		sourceColumn: marketingonlyname
+
+		annotation SummarizationSetBy = Automatic
+
+	column '담당 사업부'
+		dataType: string
+		lineageTag: 485a4fe2-4be5-4c44-94b7-e031d183fbcb
+		summarizeBy: none
+		sourceColumn: owningbusinessunitname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created By (IP Address)'
+		dataType: string
+		lineageTag: 841ff971-d8af-42d1-ac01-aa90ee02d2a8
+		summarizeBy: none
+		sourceColumn: adx_createdbyipaddress
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created By (User Name)'
+		dataType: string
+		lineageTag: ea401f9c-c245-40fa-bb47-425c9b280572
+		summarizeBy: none
+		sourceColumn: adx_createdbyusername
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Modified By (IP Address)'
+		dataType: string
+		lineageTag: 929f4961-db57-41a2-91df-8832d21543ee
+		summarizeBy: none
+		sourceColumn: adx_modifiedbyipaddress
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Modified By (User Name)'
+		dataType: string
+		lineageTag: 7bc05dcb-9483-4ba3-8244-dd73017e3b8c
+		summarizeBy: none
+		sourceColumn: adx_modifiedbyusername
+
+		annotation SummarizationSetBy = Automatic
+
+	column msa_managingpartnerid
+		dataType: string
+		lineageTag: fbbe7b0a-a670-43ce-a2f2-98cc3f4a0f58
+		summarizeBy: none
+		sourceColumn: msa_managingpartnerid
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Managing Partner'
+		dataType: string
+		lineageTag: 91fbfa10-7bc1-4e0e-ab35-c69958ddd1f3
+		summarizeBy: none
+		sourceColumn: msa_managingpartneridname
+
+		annotation SummarizationSetBy = Automatic
+
+	column msa_managingpartneridyominame
+		dataType: string
+		lineageTag: ebb328fb-50c6-419d-acc7-4d0e473de4f9
+		summarizeBy: none
+		sourceColumn: msa_managingpartneridyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'account (2)' = m
+		mode: import
+		source =
+				let
+				    Source = CommonDataService.Database("ssrs.crm.dynamics.com"),
+				    dbo_account = Source{[Schema="dbo",Item="account"]}[Data],
+				    Top50 = Table.FirstN(dbo_account, 50)
+				in
+				    Top50
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

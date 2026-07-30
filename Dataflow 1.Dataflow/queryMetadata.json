@@ -1,0 +1,25 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "Dataflow 1",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "gatewayObjectId": "21a86c7f-e7d5-4840-9c17-93e2f62ef2da",
+  "queriesMetadata": {
+    "TBLX": {
+      "queryId": "c2b2aae8-8e47-4ae9-9421-11dfb3f1bde5",
+      "queryName": "TBLX"
+    },
+    "TBLX3": {
+      "queryId": "2d5391ef-1e14-4eae-ab9f-68a412c537b1",
+      "queryName": "TBLX3"
+    }
+  },
+  "connections": [
+    {
+      "path": "w22sql22-ag.contoso.net;AGDB01",
+      "kind": "SQL",
+      "connectionId": "{\"ClusterId\":\"21a86c7f-e7d5-4840-9c17-93e2f62ef2da\",\"DatasourceId\":\"448c6fe1-3da4-4eff-b5f0-93e4915984f9\"}"
+    }
+  ]
+}
